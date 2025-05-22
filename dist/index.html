@@ -1,0 +1,36 @@
+<!-- шаблон верстки входной страницы для игр -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра на память</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/adaptive.css">
+<script defer src="main.js"></script></head>
+<body class="mainScreen">
+<div class="container main">
+    <header class="header">
+     <!--   <nav class="menu">
+            <div class="menu-item">Меню</div>
+            <div class="menu-item">Выход</div>
+        </nav>-->
+    </header>
+    <div class="button">
+        <button class="btn">
+            <a href="src/game.html">Начать игру</a>
+        </button>
+    </div>
+</div>
+<footer class="footer">
+    <div class="rights" id="rigths">
+
+    </div>
+</footer>
+<script>
+    let rigths = document.getElementById('rigths');
+    rigths.innerHTML = ("Copyright &copy; "+ new Date().getFullYear()+ " Все права защищены.");
+</script>
+<script src="gameJs.js"></script>
+</body>
+</html>

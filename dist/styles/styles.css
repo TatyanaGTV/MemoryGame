@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mainScreen{
+    color: #fffd8f;
+    background-image: url("../assets/Детские Обои 1.jpg");
+}
+.container{
+    max-width: 1470px;
+    padding: 20px;
+}
+.container.game{
+    position: relative;
+    background-color:  #fbf9f7;
+}
+.container.main{
+    height: 100vh;
+}
+.field{
+    max-width: 1000px;
+    padding: 50px;
+    margin: 0 auto;
+    background-color: wheat;
+    border-radius: 5px;
+}
+
+
+.tiles{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.tile{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    color: black;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: Georgia, sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    padding: 30px;
+    box-sizing: border-box;
+    display: none;
+    z-index: 1;
+    position: relative;
+
+    backface-visibility: hidden;
+    transition: transform .3s cubic-bezier(.2,.85,.4,1.275);
+}
+.back{
+    display:block;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    background-color: #6764e2;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+
+    text-align: center;
+    backface-visibility: hidden;
+    transform: rotateY(-180deg);
+    transition: transform .3s cubic-bezier(.2,.85,.4,1.275);
+}
+.card-block:hover .tile{
+    transform: rotateY(0deg);
+    z-index: 2;
+}
+.card-block:hover .back{
+    transform: rotateY(180deg);
+    z-index: -1;
+}
+.back-button{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Georgia, sans-serif;
+
+}
+.back-button a {
+    text-decoration: none;
+    color: #382303;
+}
+.back-button a:hover {
+    text-decoration: none;
+    color: #1b78ff;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-item{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Georgia, sans-serif;
+}
+.button{
+
+
+}
+.btn{
+    display: block;
+    margin: 60px auto;
+    background-color: #fffd8f;
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Georgia, sans-serif;
+    color: black;
+}
+.btn a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Georgia, sans-serif;
+    color: black;
+}
+.btn:hover{
+    background-color: red;
+}
+.footer{
+    bottom: 0;
+}
+.rights{
+    color: #040e04;
+}
