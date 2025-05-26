@@ -1,3 +1,60 @@
+@media screen and (min-width: 680px) and (max-width: 1024px){
+    .tiles{
+        display: grid;
+        grid-template-rows:  1fr 1fr 1fr 1fr ;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        justify-items: center;
+    }
+    .field{
+        max-width: 1000px;
+        padding: 50px 10px 50px 10px;
+    }
+    .container-rules{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 679px){
+    .tiles{
+        display: grid;
+        grid-template-rows:  1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        justify-items: center;
+    }
+    .field{
+        max-width: 1000px;
+        padding: 50px 10px 50px 10px;
+    }
+    .tile{
+        width: 80px;
+        height: 80px;
+        border-radius: 5px;
+        background-color: aliceblue;
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Georgia, sans-serif;
+        text-align: center;
+        vertical-align: middle;
+        padding: 10px;
+        box-sizing: border-box;
+        display: none;
+    }
+    .back{
+        display:block;
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+        background-color: #6764e2;
+    }
+    .container-rules{
+        width: 80%;
+    }
+}
+
+
 @media screen and (min-width: 319px) and (max-width: 475px){
     .mainScreen{
         background-repeat: no-repeat;
@@ -37,56 +94,13 @@
         border-radius: 5px;
         background-color: #6764e2;
     }
-}
-
-@media screen and (min-width: 426px) and (max-width: 679px){
-    .tiles{
-        display: grid;
-        grid-template-rows:  1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px;
-        justify-items: center;
-    }
-    .field{
-        max-width: 1000px;
-        padding: 50px 10px 50px 10px;
-    }
-    .tile{
-        width: 80px;
-        height: 80px;
-        border-radius: 5px;
-        background-color: aliceblue;
-        color: black;
-        font-size: 30px;
-        font-weight: bold;
-        font-family: Georgia, sans-serif;
-        text-align: center;
-        vertical-align: middle;
-        padding: 10px;
-        box-sizing: border-box;
-        display: none;
-    }
-    .back{
-        display:block;
-        width: 100px;
-        height: 100px;
-        border-radius: 5px;
-        background-color: #6764e2;
+    .container-rules{
+        width: 80%;
     }
 }
 
-@media screen and (min-width: 680px) and (max-width: 1024px){
-    .tiles{
-        display: grid;
-        grid-template-rows:  1fr 1fr 1fr 1fr ;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px;
-        justify-items: center;
-    }
-    .field{
-        max-width: 1000px;
-        padding: 50px 10px 50px 10px;
-    }
-}
+
+
+
 
 

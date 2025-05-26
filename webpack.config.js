@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = (env) => {
    return{ mode: env.mode ?? 'development',
-    entry: './gameJs.js',
+    entry: './src/gameJs.js',
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),

@@ -46,11 +46,16 @@
     padding: 30px;
     box-sizing: border-box;
     display: none;
-    z-index: 1;
+}
+.card-block{
     position: relative;
-
-    backface-visibility: hidden;
-    transition: transform .3s cubic-bezier(.2,.85,.4,1.275);
+    height: 100%;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+    z-index: 20;
 }
 .back{
     display:block;
@@ -58,27 +63,12 @@
     height: 200px;
     border-radius: 5px;
     background-color: #6764e2;
-    z-index: 0;
-    position: absolute;
-    top: 0;
-
-    text-align: center;
-    backface-visibility: hidden;
-    transform: rotateY(-180deg);
-    transition: transform .3s cubic-bezier(.2,.85,.4,1.275);
-}
-.card-block:hover .tile{
-    transform: rotateY(0deg);
-    z-index: 2;
-}
-.card-block:hover .back{
-    transform: rotateY(180deg);
-    z-index: -1;
+    color: #FFF;
 }
 .back-button{
     position: absolute;
     top: 20px;
-    right: 30px;
+    width: 70px;
     font-size: 25px;
     font-weight: bold;
     font-family: Georgia, sans-serif;
@@ -122,6 +112,7 @@
     font-weight: bold;
     font-family: Georgia, sans-serif;
     color: black;
+    outline: none ;
 }
 .btn a{
     text-decoration: none;
@@ -138,4 +129,42 @@
 }
 .rights{
     color: #040e04;
+}
+
+/* правила */
+
+
+.rules-body{
+    background-color: #f5f5e3;
+}
+
+.container-rules{
+    width: 50%;
+    height: 50%;
+    margin: 100px auto 0;
+}
+.rules-title{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.rules-subtitle{
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+.rules-item{
+    border-radius: 20px;
+    border:3px solid #1b78ff;
+    padding: 30px;
+}
+.back-icon{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    cursor: pointer;
+}
+.back-icon svg path{
+    fill: #1b78ff;
 }
